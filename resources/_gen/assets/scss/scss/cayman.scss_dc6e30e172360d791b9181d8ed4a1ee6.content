@@ -330,7 +330,11 @@ ul {
       .containerHeader .containerNavigationHeader.activeMenuMobile .containerList {
         height: 125vh;
         visibility: visible;
-        overflow-y: auto; }
+        overflow-y: auto; } }
+  @media (max-width: 62rem) and (max-width: 563px) {
+    .containerHeader .containerNavigationHeader.activeMenuMobile .containerList {
+      top: 5.625rem; } }
+    @media (max-width: 62rem) {
       .containerHeader .containerNavigationHeader.activeMenuMobile #btnMobile #iconMenu {
         border-top: none; }
         .containerHeader .containerNavigationHeader.activeMenuMobile #btnMobile #iconMenu::before {

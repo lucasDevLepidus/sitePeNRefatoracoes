@@ -490,6 +490,10 @@ ul{
           height: 125vh;
           visibility: visible;
           overflow-y: auto;
+
+          @media (max-width: 563px) {
+            top: 5.625rem;
+          }
         }
 
         #btnMobile{
