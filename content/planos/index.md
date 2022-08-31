@@ -29,4 +29,4 @@ Pagamento anual antecipado: 10% de desconto
 
 [Solicite um orçamento][1] para que possamos avaliar a melhor forma de atendê-lo.
 
-[1]: http://localhost:1313/solicitar-orcamento/ 'Solicitar Orçamento'
+[1]: /solicitar-orcamento/ 'Solicitar Orçamento'

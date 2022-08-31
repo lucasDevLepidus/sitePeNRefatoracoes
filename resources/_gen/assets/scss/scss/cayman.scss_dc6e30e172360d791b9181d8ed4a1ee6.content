@@ -16,9 +16,6 @@ a {
   a:hover {
     text-decoration: underline; }
 
-ul {
-  list-style: none; }
-
 .btn {
   display: inline-block;
   color: rgba(255, 255, 255, 0.7);
@@ -114,9 +111,11 @@ ul {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: #159957; }
+    color: #159957;
+    font-size-adjust: 0.5; }
   .main-content p {
-    margin-bottom: 1em; }
+    margin-bottom: 1rem;
+    font-size-adjust: 0.4; }
   .main-content code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -260,10 +259,10 @@ ul {
     .containerHeader .containerNavigationHeader .containerList {
       display: flex;
       align-items: center;
-      gap: 1.25rem; }
+      gap: 1.25rem;
+      list-style: none; }
       .containerHeader .containerNavigationHeader .containerList .itens .item {
         display: block;
-        padding: .3125rem;
         text-decoration: none;
         color: rgba(255, 255, 255, 0.7);
         background-color: rgba(255, 255, 255, 0.08);
@@ -271,13 +270,18 @@ ul {
         font-weight: bold;
         border-radius: 0.3rem;
         font-family: Arial, Sans-serif, Helvética, Times;
-        transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        padding: 0.75rem 1rem;
+        font-size: 1rem; }
+        @media (max-width: 77rem) {
+          .containerHeader .containerNavigationHeader .containerList .itens .item {
+            font-size: .75rem; } }
         .containerHeader .containerNavigationHeader .containerList .itens .item:hover {
           color: rgba(255, 255, 255, 0.8);
           text-decoration: none;
           background-color: rgba(255, 255, 255, 0.2);
           border-color: rgba(255, 255, 255, 0.3); }
-    @media (max-width: 62rem) {
+    @media (max-width: 70.375rem) {
       .containerHeader .containerNavigationHeader #btnMobile {
         display: flex;
         padding: .5rem 1rem;
@@ -331,10 +335,10 @@ ul {
         height: 125vh;
         visibility: visible;
         overflow-y: auto; } }
-  @media (max-width: 62rem) and (max-width: 563px) {
+  @media (max-width: 70.375rem) and (max-width: 563px) {
     .containerHeader .containerNavigationHeader.activeMenuMobile .containerList {
       top: 5.625rem; } }
-    @media (max-width: 62rem) {
+    @media (max-width: 70.375rem) {
       .containerHeader .containerNavigationHeader.activeMenuMobile #btnMobile #iconMenu {
         border-top: none; }
         .containerHeader .containerNavigationHeader.activeMenuMobile #btnMobile #iconMenu::before {
