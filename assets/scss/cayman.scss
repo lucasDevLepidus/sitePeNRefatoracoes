@@ -51,7 +51,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Nexa Light","SciFly-Sans";
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: $body-text-color;
 }
@@ -173,17 +173,14 @@ a {
     max-width: 64rem;
     padding: 2rem 6rem;
     margin: 0 auto;
-    font-size: 1.1rem;
   }
 
   @include medium {
     padding: 2rem 4rem;
-    font-size: 1.1rem;
   }
 
   @include small {
     padding: 2rem 1rem;
-    font-size: 1rem;
   }
 
   img {
@@ -195,13 +192,16 @@ a {
     margin-bottom: 1rem;
     font-weight: normal;
     color: $section-headings-color;
-
-    font-size-adjust: 0.5;
   }
 
   p {
+    font-size: 1.25rem;
+    font-size-adjust: 0.4;
     margin-bottom: 1rem;
+  }
 
+  li{
+    font-size: 1.25rem;
     font-size-adjust: 0.4;
   }
 
