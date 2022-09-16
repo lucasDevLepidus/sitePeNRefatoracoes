@@ -419,7 +419,7 @@ a {
           @media (max-width: 77rem){
             font-size: .75rem;
           }
-
+        
           &:hover {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
@@ -461,6 +461,7 @@ a {
         display: block;
         position: absolute;
         width: 100%;
+        height: 0rem;
         top: 8.125rem;
         right: 0rem;
         background: rgb(168,218,255);
@@ -469,7 +470,6 @@ a {
         background: linear-gradient(270deg, #427fc9 0%, #c1e8b3 80%);
         transition: .6s;
         z-index: 1000;
-        height: 0rem;
         visibility: hidden;
         overflow-y: hidden;
 
@@ -479,9 +479,10 @@ a {
             width: 91.5%;
             padding: 1rem 0.5rem;
             margin: 0 1rem;
-            color: #434c5e;
+            color: #ffffff;
             background-color: rgba(255, 255, 255, 0.08);
             border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            font-size: 1rem;
             &:hover {
               color: rgba(255, 255, 255, 0.8);
               text-decoration: none;
@@ -494,11 +495,11 @@ a {
 
       &.activeMenuMobile{
         .containerList{
-          height: 125vh;
+          height: 55vh;
           visibility: visible;
           overflow-y: auto;
 
-          @media (max-width: 563px) {
+          @media (max-width: 35.1875rem) {
             top: 5.625rem;
           }
         }
@@ -523,10 +524,41 @@ a {
 }
 
 .main-content {
-  text-align: justify;
+  word-wrap: break-word;
+  :first-child {
+    margin-top: 0;
+  }
 
-  h1,h2,h3{
+  @include large {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  @include medium {
+    padding: 2rem 4rem;
+    text-align: justify;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+    text-align: justify;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
     color: #292929ff;
+  }
+
+  section > .containerWhoWeAre{
+    height: 100vh;
   }
 }
 
@@ -545,7 +577,7 @@ a {
     }
 
     &.activeBlockquote::before{
-      content: '\02C7'; 
+      content: '\02C7';
       position: relative;
       top: 1.875rem;
       font-size: 3.125rem;
@@ -662,6 +694,7 @@ a {
           text-align: initial;
 
           .itensListFooter{
+            list-style: none;
             &:not(:last-child){
               margin-bottom: 0.625rem;
             }
