@@ -144,6 +144,22 @@ a {
     font-size: 1.75rem;
   }
 }
+.error-block{
+  text-align: center;
+  
+  h1{
+    color: #000000;
+    @include large {
+    font-size: 3.25rem;
+    }
+  }
+  h2{
+    color: #181818;
+  }
+}
+.error-title{
+  
+}
 
 .project-tagline {
   margin-bottom: 2rem;
