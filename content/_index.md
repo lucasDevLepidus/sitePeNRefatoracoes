@@ -1,9 +1,10 @@
 ---
-title: Periódicos em nuvens
 author: Lepidus
 type: page
 date: 2012-02-06T13:56:16+00:00
 ---
+
+# Periódicos em Nuvens
 
 O **Periódicos em Nuvens** é uma solução completa para periódicos tecno-científicos, permitindo que os editores concentrem seus esforços no fluxo editorial e conteúdo de suas revistas. Nela, oferecemos um ambiente **[SEER]({{< relref "seer/index.md" >}})/[OJS]({{< relref "open-journal-systems-ojs/index.md">}})** pronto para o uso, além de uma série de [serviços adicionais][1] para atender as necessidades específicas de cada equipe editorial.
 

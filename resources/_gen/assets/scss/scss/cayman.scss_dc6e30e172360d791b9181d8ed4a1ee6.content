@@ -91,6 +91,8 @@ a {
   word-wrap: break-word; }
   .main-content :first-child {
     margin-top: 0; }
+    .main-content :first-child h1 {
+      margin-top: 0; }
   @media screen and (min-width: 64em) {
     .main-content {
       max-width: 64rem;

@@ -3,7 +3,10 @@
 <div id="form">
   <h2>Ficha de Contratação</h2>
   <label>O periódico ou portal de periódicos já existe?</label>
-  <form action="https://formsubmit.co/your@email.com" method="POST">
+  <form
+    action="https://formsubmit.co/lucasanselmo@lepidus.com.br"
+    method="POST"
+  >
     <select name="periodico_existente">
       <option
         value="Sim, está em outro servidor SEER e quero migrá-lo"
@@ -146,6 +149,12 @@
       <input type="checkbox" name="aceite_do_contrato" value="1" required />
       <label> Li e aceito os termos do contrato.</label>
     </div>
+
+    <input
+      type="hidden"
+      name="_subject"
+      value="Contratação PeN | Formulário preenchido pelo site"
+    />
 
     <input type="hidden" name="_template" value="table" />
 

@@ -2,21 +2,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="Soluções para revistas acadêmicas em SEER" />
+  <meta
+    name="description"
+    content="Soluções para revistas acadêmicas em SEER"
+  />
   <meta name="author" content="Lepidus Tecnologia" />
-  <meta name="keywords" content="periódicos em nuvens, periódicos, revistas acadêmicas, revistas acadêmicas em SEER, SEER, revistas de universidades" />
-  <meta name="robots" content="index,follow">
-  <meta name="reply-to" content="contato@lepidus.com">
-  <meta http-equiv="content-language" content="pt-br">
+  <meta
+    name="keywords"
+    content="periódicos em nuvens, periódicos, revistas acadêmicas, revistas acadêmicas em SEER, SEER, revistas de universidades"
+  />
+  <meta name="robots" content="index,follow" />
+  <meta name="reply-to" content="contato@lepidus.com" />
+  <meta http-equiv="content-language" content="pt-br" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
-  {{ hugo.Generator }} <link rel="stylesheet" href="{{ "css/normalize.css" | absURL }}"> 
-  {{ $caymanScss := "scss/cayman.scss" }} {{ $options := (dict "targetPath" "css/cayman.css") }} 
-  {{ $caymanCss := resources.Get $caymanScss | resources.ExecuteAsTemplate $caymanScss . | toCSS $options | fingerprint }}
+  {{ hugo.Generator }} <link rel="stylesheet" href="{{ "css/normalize.css" |
+  absURL }}"> {{ $caymanScss := "scss/cayman.scss" }} {{ $options := (dict
+  "targetPath" "css/cayman.css") }} {{ $caymanCss := resources.Get $caymanScss |
+  resources.ExecuteAsTemplate $caymanScss . | toCSS $options | fingerprint }}
   <link rel="stylesheet" href="{{ $caymanCss.Permalink }}" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-  <title>{{ $.Site.Title }}</title>
+
+  <title>
+    {{ if .Title }} {{ .Title }} | Periódicos em Nuvens {{ else }} {{
+    $.Site.Title }} {{ end }}
+  </title>
 </head>

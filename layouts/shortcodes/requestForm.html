@@ -1,15 +1,18 @@
 <link rel="stylesheet" href="../../assets/scss/cayman.scss" />
 
 <div id="form">
-  <form action="https://formsubmit.co/contato@lepidus.com" method="POST">
+  <form
+    action="https://formsubmit.co/24f8838e97d365e0d5579157d4acf3f2"
+    method="POST"
+  >
     <label>Nome completo</label>
     <input type="text" name="nomeCompleto" size="40" required />
 
     <label>Endereço de e-mail</label>
-    <input type="email" name="correioEletronico" size="40" required />
+    <input type="email" name="email" size="40" required />
 
     <label>Telefone</label>
-    <input type="text" name="telefone" size="40" required />
+    <input type="tel" name="telefone" size="40" required />
 
     <label>Instituição</label>
     <input type="text" name="instituicao" size="40" required />
@@ -25,7 +28,17 @@
       required
     ></textarea>
 
+    <input
+      type="hidden"
+      name="_subject"
+      value="Solicitação de Orçamento Periódicos em Nuvens"
+    />
     <input type="hidden" name="_template" value="table" />
+    <input
+      type="hidden"
+      name="_url"
+      value="https://periodicos.emnuvens.com.br/solicitar-orcamento/"
+    />
 
     <button type="submit">Enviar</button>
     <pre>Retornaremos no endereço de correio eletrônico informado.</pre>
